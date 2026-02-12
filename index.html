@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammed Imam's Cybersecurity Portfolio - Application Security Specialist & SOC Threat Hunter">
+    <title>Mohammed Imam | Cybersecurity Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Scripts -->
+    <script src="js/particles.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Matrix Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">IMAM.CYBER</span>
+                <span class="logo-bracket">]</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mode-toggle" id="modeToggle">
+                <i class="fas fa-shield-alt"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="security-badge">
+                    <span class="badge-text">SECURITY CLEARANCE: GRANTED</span>
+                </div>
+                
+                <h1 class="hero-title glitch" data-text="IMAM UDDIN MOHAMMED">IMAM UDDIN MOHAMMED</h1>
+                
+                <div class="hero-roles">
+                    <div class="role-container">
+                        <div class="role offensive">
+                            <i class="fas fa-crosshairs"></i>
+                            <span>APPLICATION SECURITY SPECIALIST</span>
+                        </div>
+                        <div class="divider-line"></div>
+                        <div class="role defensive">
+                            <i class="fas fa-shield-halved"></i>
+                            <span>SOC THREAT HUNTER</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="hero-tagline">
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">57</div>
+                        <div class="stat-label">Threats Detected</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Vulns Disclosed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Detection Accuracy</div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View Missions
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                </div>
+            </div>
+            
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <div class="terminal-title">system_scan.sh</div>
+                </div>
+                <div class="terminal-body" id="terminal-output">
+                    <div class="terminal-line">
+                        <span class="prompt">root@imam-security:~$</span>
+                        <span class="command">./system_scan.sh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// IDENTITY VERIFICATION</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p class="lead">Security+ certified cybersecurity professional with dual expertise in <span class="highlight offensive-text">offensive security operations</span> and <span class="highlight defensive-text">defensive threat hunting</span>.</p>
+                    </div>
+                    
+                    <div class="about-grid">
+                        <div class="about-card offensive-card">
+                            <div class="card-icon">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <h3>Offensive Security</h3>
+                            <p>Manual web/API penetration testing with Burp Suite. Identified and responsibly disclosed 5 real vulnerabilities in a production open-source FastAPI project. OWASP Top 10 specialist.</p>
+                        </div>
+                        
+                        <div class="about-card defensive-card">
+                            <div class="card-icon">
+                                <i class="fas fa-shield"></i>
+                            </div>
+                            <h3>Defensive Operations</h3>
+                            <p>Built custom Suricata/ELK detection pipeline achieving 100% accuracy across 57 simulated attacks. Cloud-native incident response with forensic analysis of 12,000+ CloudTrail events.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>MS in Computer Science (Cybersecurity) - University of Central Oklahoma</span>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>CompTIA Security+ Certified (SY0-701)</span>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Application Security Intern @ Paycom</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// CAPABILITY ASSESSMENT</span>
+                <h2 class="section-title">Arsenal</h2>
+            </div>
+            
+            <div class="skills-toggle">
+                <button class="toggle-btn active" data-mode="offensive">
+                    <i class="fas fa-crosshairs"></i>
+                    Offensive
+                </button>
+                <button class="toggle-btn" data-mode="defensive">
+                    <i class="fas fa-shield-halved"></i>
+                    Defensive
+                </button>
+                <button class="toggle-btn" data-mode="all">
+                    <i class="fas fa-layer-group"></i>
+                    All Skills
+                </button>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Offensive Skills -->
+                <div class="skill-category offensive-category" data-category="offensive">
+                    <h3 class="category-title">
+                        <i class="fas fa-bug"></i>
+                        Application Security & Pentesting
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Burp Suite</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">OWASP Top 10</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Web/API Pentesting</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Vulnerability Assessment</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Code Review & Remediation</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Defensive Skills -->
+                <div class="skill-category defensive-category" data-category="defensive" style="display: none;">
+                    <h3 class="category-title">
+                        <i class="fas fa-shield-halved"></i>
+                        SOC & Threat Hunting
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SIEM (ELK Stack)</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Suricata IDS/IPS</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Detection Engineering</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Incident Response</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Cloud Security (AWS)</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Core Technical Skills -->
+                <div class="skill-category core-category" data-category="all">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Core Technical Skills
+                    </h3>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">SQL</span>
+                        <span class="tech-badge">Linux</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Kubernetes</span>
+                        <span class="tech-badge">AWS</span>
+                        <span class="tech-badge">Git</span>
+                        <span class="tech-badge">Wireshark</span>
+                        <span class="tech-badge">Nmap</span>
+                        <span class="tech-badge">Hydra</span>
+                        <span class="tech-badge">tcpdump</span>
+                        <span class="tech-badge">Postman</span>
+                        <span class="tech-badge">MITRE ATT&CK</span>
+                        <span class="tech-badge">NIST CSF</span>
+                        <span class="tech-badge">Threat Modeling</span>
+                        <span class="tech-badge">Networking</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">React.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// MISSION ARCHIVES</span>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Dual operations: Breaking systems securely & Hunting threats relentlessly</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: FastAPI Security Audit (Offensive) -->
+                <div class="project-card offensive-project" data-project="offensive">
+                    <div class="project-header">
+                        <div class="project-status">
+                            <span class="status-badge offensive">MISSION: OFFENSIVE</span>
+                            <span class="threat-level">SEVERITY: HIGH</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="project-title">FastAPI Security Audit</h3>
+                    <p class="project-description">
+                        Conducted comprehensive security audit of production open-source FastAPI project. Identified and responsibly disclosed 5 real vulnerabilities including authentication bypass, SQL injection, and XSS. Currently collaborating with maintainers on secure remediation.
+                    </p>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">5</span>
+                            <span class="metric-label">Vulnerabilities Found</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">100%</span>
+                            <span class="metric-label">Responsibly Disclosed</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Burp Suite</span>
+                        <span class="tech-tag">OWASP Top 10</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Manual Testing</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <span class="project-note" style="color: var(--color-text-tertiary); font-size: 0.9rem; font-style: italic;">
+                            <i class="fas fa-lock"></i> Responsible disclosure in progress
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Project 2: DNS Tunneling Detection (Defensive) -->
+                <div class="project-card defensive-project" data-project="defensive">
+                    <div class="project-header">
+                        <div class="project-status">
+                            <span class="status-badge defensive">MISSION: DEFENSIVE</span>
+                            <span class="threat-level detection">ACCURACY: 99.6%</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="project-title">DNS Tunneling Detection System</h3>
+                    <p class="project-description">
+                        Engineered a DNS tunneling detection system using statistical traffic analysis and decision-tree ML classifier, achieving 99.6% rule-based detection and 100% classification accuracy. Analyzed 1,389 DNS queries extracting entropy, subdomain length, and query frequency features from PCAP data.
+                    </p>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">99.6%</span>
+                            <span class="metric-label">Detection Rate</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">1,389</span>
+                            <span class="metric-label">Queries Analyzed</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PCAP Analysis</span>
+                        <span class="tech-tag">Statistical Analysis</span>
+                        <span class="tech-tag">iodine</span>
+                        <span class="tech-tag">dnscat2</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/itsmiu/dns-tunneling-detection" class="project-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3: SOC Threat Hunting Lab (Defensive) -->
+                <div class="project-card defensive-project" data-project="defensive">
+                    <div class="project-header">
+                        <div class="project-status">
+                            <span class="status-badge defensive">MISSION: DEFENSIVE</span>
+                            <span class="threat-level detection">ACCURACY: 100%</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="project-title">SOC Threat Hunting Lab</h3>
+                    <p class="project-description">
+                        Engineered production-grade SIEM pipeline detecting 57 simulated attacks including DNS tunneling, port scanning, and SSH brute force. Developed 7 custom Suricata rules mapped to MITRE ATT&CK with zero false positives and sub-60 second MTTD.
+                    </p>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">57</span>
+                            <span class="metric-label">Attacks Detected</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">0</span>
+                            <span class="metric-label">False Positives</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Suricata</span>
+                        <span class="tech-tag">ELK Stack</span>
+                        <span class="tech-tag">Kibana</span>
+                        <span class="tech-tag">MITRE ATT&CK</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/itsmiu/soc-threat-hunting-pipeline" class="project-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Cloud IR Simulation (Defensive) -->
+                <div class="project-card defensive-project" data-project="defensive">
+                    <div class="project-header">
+                        <div class="project-status">
+                            <span class="status-badge defensive">MISSION: INCIDENT RESPONSE</span>
+                            <span class="threat-level detection">EVENTS: 12,444</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="project-title">Cloud-Native Incident Response</h3>
+                    <p class="project-description">
+                        Built AWS credential compromise simulation analyzing 12,444 CloudTrail events. Developed custom Python forensic tool identifying 15 suspicious activities across reconnaissance, privilege escalation, and data exfiltration. Delivered 25-page NIST-aligned IR report.
+                    </p>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">12K+</span>
+                            <span class="metric-label">Events Analyzed</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">15</span>
+                            <span class="metric-label">IOCs Identified</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS CloudTrail</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NIST 800-61</span>
+                        <span class="tech-tag">Forensics</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/itsmiu/cloud-ir-simulation" class="project-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 5: Phishing IR Pipeline (Defensive) -->
+                <div class="project-card defensive-project" data-project="defensive">
+                    <div class="project-header">
+                        <div class="project-status">
+                            <span class="status-badge defensive">MISSION: EMAIL FORENSICS</span>
+                            <span class="threat-level detection">AUTOMATION: ACTIVE</span>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="project-title">Phishing IR Automation</h3>
+                    <p class="project-description">
+                        Engineered Python-based email forensics toolkit analyzing 3 phishing campaigns. Automated SPF/DKIM/DMARC validation, VirusTotal threat intelligence enrichment, and generated firewall-ready IOC blocklists with NIST-aligned playbooks.
+                    </p>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">10</span>
+                            <span class="metric-label">IOCs Extracted</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">3</span>
+                            <span class="metric-label">Attack Vectors</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">VirusTotal API</span>
+                        <span class="tech-tag">Email Forensics</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/itsmiu/phishing-ir-simulation" class="project-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// OPERATIONAL HISTORY</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker offensive-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge offensive">OFFENSIVE OPS</div>
+                        <h3 class="timeline-title">Application Security Intern</h3>
+                        <div class="timeline-company">Paycom | Oklahoma City, OK</div>
+                        <div class="timeline-date">May 2025 - Aug 2025</div>
+                        <ul class="timeline-description">
+                            <li>Performed manual and automated security testing on web applications and APIs</li>
+                            <li>Identified vulnerabilities aligned with OWASP Top 10, validated exploitability and business impact</li>
+                            <li>Collaborated with developers to review vulnerable code paths and improve security posture</li>
+                            <li>Enhanced internal testing workflows through documentation and process improvements</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker defensive-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge defensive">RESEARCH</div>
+                        <h3 class="timeline-title">Graduate Research Assistant</h3>
+                        <div class="timeline-company">University of Central Oklahoma | Edmond, OK</div>
+                        <div class="timeline-date">Aug 2025 - Dec 2025</div>
+                        <ul class="timeline-description">
+                            <li>Analyzed authentication flows and security misconfigurations across HPC schedulers</li>
+                            <li>Built 10+ controlled environments to detect anomalies and document security findings</li>
+                            <li>Created dataset of 1,000+ labeled security events for anomaly detection research</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker offensive-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge offensive">SECURE DEVELOPMENT</div>
+                        <h3 class="timeline-title">Secure Software Engineer Intern</h3>
+                        <div class="timeline-company">Aryagami Cloud Services | Hyderabad, India</div>
+                        <div class="timeline-date">May 2022 - Dec 2022</div>
+                        <ul class="timeline-description">
+                            <li>Developed containerized web applications using Docker and Kubernetes</li>
+                            <li>Implemented authentication, RBAC, and encryption to protect application resources</li>
+                            <li>Partnered with engineering teams to identify security gaps and promote secure practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research & Publications Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// RESEARCH CONTRIBUTIONS</span>
+                <h2 class="section-title">Research & Publications</h2>
+            </div>
+            
+            <div class="research-grid">
+                <!-- Published Papers -->
+                <div class="research-card published">
+                    <div class="research-badge">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Published</span>
+                    </div>
+                    <h3 class="research-title">Cyber Threat Intelligence and Information Sharing</h3>
+                    <p class="research-venue">International Journal of Scientific Development and Research (IJSDR), 2023</p>
+                    <p class="research-description">
+                        Explores structured threat intelligence sharing models to improve organizational cyber defense.
+                    </p>
+                    <div class="research-links">
+                        <a href="https://ijsdr.org/papers/IJSDR2309022.pdf" class="research-link" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Paper
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="research-card published">
+                    <div class="research-badge">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Published</span>
+                    </div>
+                    <h3 class="research-title">Blockchain and Distributed Ledger Technologies</h3>
+                    <p class="research-venue">International Journal of Scientific Development and Research (IJSDR), 2023</p>
+                    <p class="research-description">
+                        Analyzes blockchain architecture and its security implications for decentralized systems.
+                    </p>
+                    <div class="research-links">
+                        <a href="https://ijsdr.org/papers/IJSDR2309029.pdf" class="research-link" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Paper
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- In Progress Research -->
+                <div class="research-card in-progress">
+                    <div class="research-badge in-progress">
+                        <i class="fas fa-flask"></i>
+                        <span>In Progress</span>
+                    </div>
+                    <h3 class="research-title">Comparative Security Analysis of HPC Job Schedulers</h3>
+                    <p class="research-venue">RCSA Research Project — Oklahoma Research Day 2026</p>
+                    <p class="research-description">
+                        Security evaluation of Slurm, HTCondor, and Kubernetes schedulers focusing on authentication vulnerabilities and container escape vectors.
+                    </p>
+                    <div class="research-tech">
+                        <span class="tech-badge">HPC Security</span>
+                        <span class="tech-badge">Container Escape</span>
+                        <span class="tech-badge">Authentication Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// CREDENTIALS</span>
+                <h2 class="section-title">Resume</h2>
+            </div>
+            
+            <div class="resume-card">
+                <div class="resume-content">
+                    <div class="resume-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="resume-text">
+                        <h3>Download Full Resume</h3>
+                        <p>CompTIA Security+ | MS in CS (Cybersecurity) | Application Security & SOC Experience</p>
+                    </div>
+                    <a href="assets/resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// ESTABLISH CONNECTION</span>
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Let's discuss security opportunities</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:mohammed.imamud@gmail.com">mohammed.imamud@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/imamuddinmohammed" target="_blank" rel="noopener">imamuddinmohammed</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/itsmiu" target="_blank" rel="noopener">itsmiu</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <h3>Based in Oklahoma City, OK</h3>
+                        <p>Open to opportunities across the United States (remote, hybrid, or on-site)</p>
+                        <div class="availability">
+                            <span class="status-indicator"></span>
+                            <span>Available for opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2026 Imam Uddin Mohammed. All rights reserved.</p>
+                    <p class="footer-tagline">Breaking systems securely | Hunting threats relentlessly</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/imamuddinmohammed" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/itsmiu" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mohammed.imamud@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
